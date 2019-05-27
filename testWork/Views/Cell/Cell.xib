@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="zHk-vU-aWE" customClass="Cell" customModule="testWork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zHk-vU-aWE" id="AfR-Yq-Ndm">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42T-pB-ZfU">
+                                <rect key="frame" x="16" y="15" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8l-PU-MAo">
+                                <rect key="frame" x="166" y="15" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTY-Rd-FIy">
+                                <rect key="frame" x="317" y="15" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y8l-PU-MAo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2Rv-93-wBh"/>
+                            <constraint firstItem="42T-pB-ZfU" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Tht-xT-KGm"/>
+                            <constraint firstItem="xTY-Rd-FIy" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fuP-Pu-C9T"/>
+                            <constraint firstAttribute="trailing" secondItem="xTY-Rd-FIy" secondAttribute="trailing" constant="16" id="j0M-mL-2J4"/>
+                            <constraint firstItem="Y8l-PU-MAo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kfE-Q0-ruk"/>
+                            <constraint firstItem="42T-pB-ZfU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="pLG-RT-T3X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iN0-l3-epB" firstAttribute="leading" secondItem="AfR-Yq-Ndm" secondAttribute="leading" id="cRp-Y9-PYr"/>
+                    <constraint firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="mkT-JK-cc8"/>
+                    <constraint firstItem="iN0-l3-epB" firstAttribute="top" secondItem="AfR-Yq-Ndm" secondAttribute="top" id="pCx-0j-qzi"/>
+                    <constraint firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="wGM-tg-dVI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="amountLB" destination="Y8l-PU-MAo" id="eg8-c7-1VJ"/>
+                <outlet property="nameLB" destination="42T-pB-ZfU" id="ddO-Mi-JCa"/>
+                <outlet property="volumeLB" destination="xTY-Rd-FIy" id="yka-El-wut"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

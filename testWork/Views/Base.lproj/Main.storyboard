@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Baseline standard spacing" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="testWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="center" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="BpO-gD-8Wv">
+                                <rect key="frame" x="177.5" y="323" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RdJ-kX-HJx">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egM-8D-rOX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem leftItemsSupplementBackButton="YES" id="UZ9-vK-BLa"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="egM-8D-rOX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Zd-Kk-JeA"/>
+                            <constraint firstItem="egM-8D-rOX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="49N-8A-2aR"/>
+                            <constraint firstItem="BpO-gD-8Wv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8Iu-Ex-9mt"/>
+                            <constraint firstItem="RdJ-kX-HJx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FoB-nt-iZr"/>
+                            <constraint firstItem="RdJ-kX-HJx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="RZL-cY-gpz"/>
+                            <constraint firstItem="egM-8D-rOX" firstAttribute="baseline" secondItem="RdJ-kX-HJx" secondAttribute="firstBaseline" symbolType="layoutAnchor" id="Tsg-rp-fqI"/>
+                            <constraint firstItem="egM-8D-rOX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="U2e-Ir-mJF"/>
+                            <constraint firstItem="BpO-gD-8Wv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bYf-dW-XRC"/>
+                            <constraint firstItem="RdJ-kX-HJx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cJn-3L-rvG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityInd" destination="BpO-gD-8Wv" id="dhk-72-3HN"/>
+                        <outlet property="navigationBar" destination="egM-8D-rOX" id="LXG-Dl-H80"/>
+                        <outlet property="tableView" destination="RdJ-kX-HJx" id="Aqx-vb-Kqa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
